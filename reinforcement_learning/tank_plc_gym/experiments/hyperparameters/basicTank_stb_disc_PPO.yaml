@@ -1,0 +1,27 @@
+env:
+    gym_name        : basic_tank
+    dt  : 10
+    valve_cmd      : 0.5
+    tank_level     : 50
+    qout      : 0
+    episode_len    : 640
+    random_steps    : 0
+    seed : None
+
+model:
+    type: ppo_disc
+    pi_layer  : [48, 32, 12]
+    vi_layer  : [48, 32, 12]
+    restore : None
+
+evaluation:
+    scenes    : basic_tank_scenes
+    result    : basic_tank_results
+
+training:
+    initial_learning_rate     : .0001
+    total_steps      : 50000
+    gamma           : .99
+    batch_size       : 8
+    learning_starts  : 500
+    buffer_size      : 25000

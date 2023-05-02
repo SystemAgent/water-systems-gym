@@ -1,0 +1,4 @@
+outs:
+- md5: ee399e4d44fedc054eade8778759d9ca
+  size: 2720780
+  path: 2019_SCADA_Levels.csv

@@ -1,0 +1,4 @@
+outs:
+- md5: 567ec344f6dae775756ec15f2a77fc89
+  size: 56499940
+  path: 2019_SCADA_Demands.csv

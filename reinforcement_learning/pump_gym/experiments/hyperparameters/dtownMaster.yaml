@@ -1,0 +1,25 @@
+env:
+    water_network        : d-town
+    speed_increment  : .05
+    episode_length      : 200
+    pump_groups      : [['PU1','PU2','PU3'],['PU4','PU5'],['PU6','PU7'],['PU8','PU9'],['PU10','PU11']]
+    total_demand_low   : .3
+    total_demand_high   : 1.1
+    reset_original_demands    : True
+    reset_original_pump_speeds : True
+
+model:
+    layers  : [256, 128, 12]
+    restore : None
+
+evaluation:
+    scenes    : dtown_scenes
+    result    : dtown_results
+
+training:
+    initial_learning_rate     : .0001
+    total_steps      : 1000000
+    gamma           : .9
+    batch_size       : 64
+    learning_starts  : 10000
+    buffer_size      : 350000

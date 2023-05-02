@@ -1,0 +1,28 @@
+env:
+    gym_name        : basic_tank
+    dt  : 10
+    valve_cmd      : 0.5
+    tank_level     : 0
+    qout      : 201
+    episode_len    : 20
+    random_steps    : 0
+    seed : None
+
+model:
+    type: dqn
+    layers  : [4, 4, 4]
+    restore : None
+
+evaluation:
+    scenes    : basic_tank_scenes
+    result    : basic_tank_results
+
+training:
+    num_workers     : 4
+    initial_learning_rate     : .0005
+    timesteps_per_iteration      : 10
+    number_of_iterations        : 20
+    gamma           : .99
+    batch_size       : 8
+    learning_starts  : 500
+    buffer_size      : 25000

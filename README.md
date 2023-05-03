@@ -56,10 +56,3 @@ For using PPO with stable-baselines:
 	dvc remove <filename>.dvc stop tracking file
 	dvc add -R <foldername> add every file from folder
 
-### Shell
-
-Running plan 'ipython' with activated environment will work, too. This however
-imports SQLAlchemy session, sanic app and the models:
-
-	source env/bin/activate
-	./manage.py shell

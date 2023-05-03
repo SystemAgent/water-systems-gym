@@ -5,7 +5,7 @@ setup(
     name="water-systems-gym",
     version="0.1",
     packages=find_packages(),
-    description="The data science part of zzzax",
+    description="RL for Water distribution systems",
     url='https://github.com/SystemAgent/water-systems-gym',
     extras_require={
         'dev': ['ipython', 'ipdb'],
